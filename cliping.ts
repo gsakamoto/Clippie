@@ -45,11 +45,11 @@ const addClip = (clipName: string) => {
 
 const clip = async (clipName: string) => {
   const text = await Deno.readTextFile(`list/${clipName}`);
-  const output = await $`echo ${text}`.pipe($`tr -d '\n'`).pipe($`pbcopy`);
+  await $`echo ${text}`.pipe($`tr -d '\n'`).pipe($`pbcopy`);
   done();
 };
 
-if (args.help || Deno.args.length === 0){
+if (args.help || Deno.args.length === 0) {
   console.log(HELP);
   done();
 }
