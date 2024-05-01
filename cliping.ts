@@ -71,6 +71,12 @@ if (args.add) {
   addClip(clipName);
 }
 
+if (args.remove && clipName) {
+  console.log("Remove a clip");
+  await Deno.remove(`list/${clipName}`);
+  done();
+}
+
 if (clipName && Deno.args.length === 1) {
   console.log("Copy a clip to clipboard");
   await clip(clipName);
