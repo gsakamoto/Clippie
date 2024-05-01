@@ -1,20 +1,20 @@
 const HELP = `
-Usage: cliping [options] [clip-name]
+Usage: clippie [options] [clip-name]
   -h, --help               display help for command
   -l, --list               list all clips
   -a, --add <clip-name>    add a new clip, Open Vim to write a new clip.
   -r, --remove <clip-name> remove a clip
 
 Example:
-  cliping <clip-name>
-  cliping --list
-  cliping --add <clip-name>
-  cliping --remove <clip-name>
+  clippie <clip-name>
+  clippie --list
+  clippie --add <clip-name>
+  clippie --remove <clip-name>
 
 Description:
-  Cliping is a command line tool to manage your clipboard.
+  clippie is a command line tool to manage your clipboard.
   You can copy a text to clipboard from a file.
-  You add a new clip by cliping --add <clip-name> command. Then open Vim to write a new clip.
+  You add a new clip by clippie --add <clip-name> command. Then open Vim to write a new clip.
 
   You can see all clips in the list/ directory.
 `;

@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "cliping": "deno run --allow-read --allow-write --allow-env --allow-run cliping.ts",
-    "cliplist": "deno run --allow-read --allow-write --allow-env cliping.ts --list"
+    "clippie": "deno run --allow-read --allow-write --allow-env --allow-run clippie.ts",
+    "cliplist": "deno run --allow-read --allow-write --allow-env clippie.ts --list"
   }
 }
